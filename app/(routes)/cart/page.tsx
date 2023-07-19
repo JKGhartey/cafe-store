@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import Container from '@/components/ui/container';
+import {ContainerMedium} from '@/components/ui/container';
 import useCart from '@/hooks/use-cart';
 
 import Summary from './components/summary'
@@ -24,7 +24,7 @@ const CartPage = () => {
 
     return (
         <div className="bg-white">
-            <Container>
+            <ContainerMedium>
                 <div className="px-4 py-16 sm:px-6 lg:px-8">
                     <h1 className="text-3xl font-bold text-black">Shopping Cart</h1>
                     <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start gap-x-12">
@@ -39,7 +39,7 @@ const CartPage = () => {
                         <Summary />
                     </div>
                 </div>
-            </Container>
+            </ContainerMedium>
         </div>
     )
 };
